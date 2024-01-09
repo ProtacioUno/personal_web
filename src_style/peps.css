@@ -1,14 +1,77 @@
 * {
 	box-sizing: border-box;
+	color:  white;
+}
+
+:root {
+	--primary-color :rgb(18, 13, 23) ;
+	--sub-color: rgb(30, 26, 33); 
+	--default-padding : 1rem;
+}
+
+
+body{
+	
+	/* display: flex ; */
+	/* flex-direction: column; */
 }
 
 .block-1{
 	/* background-color: tan; */
 	/* width: ; */
-	height: 100vh; 
+	height: 100vh;  
+	background-color:  var(--primary-color) ;
+	/* border:  3px dashed blue; */
+	/* background-color:  ; */
 	
+} 
+
+.block-1 .sub .col-6 {
+	/* background-color: var(--sub-color) ; 	 */
+	
+}
+
+.block-1 .sub .left{
+	border-radius: 1em ; 
+	border: 1px dashed white; 
+	/* height : 70vh ;  */
 
 }
+
+
+.block-1 .sub .left .contact_bar{
+	border-radius:  1em; 	
+	background-color: var(--sub-color) ;	
+	/* width: ; */
+}
+
+
+
+
+
+
+
+
+.block-1 .sub .col-6 h1 {
+	font-weight: bolder;
+
+}
+
+
+
+
+
+
+.block-2{
+	background-color:  rgb(147, 147, 147) ;
+	height: 100vh;
+}
+
+
+
+
+
+
 
 /* main {
 	
