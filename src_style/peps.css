@@ -19,7 +19,8 @@ body{
 .block-1{
 	/* background-color: tan; */
 	/* width: ; */
-	height: 100vh;  
+	height: 100vh;   
+	
 	background-color:  var(--primary-color) ;
 	/* border:  3px dashed blue; */
 	/* background-color:  ; */
