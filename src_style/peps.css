@@ -4,13 +4,11 @@
 }
 
 
-
 :root {
 	--primary-color :rgb(18, 13, 23) ;
 	--sub-color: rgb(30, 26, 33); 
 	--default-padding : 1rem;
 }
-
 
 body main { 	
 	display: flex ;
@@ -53,12 +51,10 @@ body main {
 	padding: 2em;
 }
 
-
 .block-1 .sub .right {
 	/* border:  3px dashed green ; */
 	color: green; 
 }
-
 
 .block-1 .sub .left .contact_bar{
 	border-radius:  1em; 	
@@ -67,10 +63,8 @@ body main {
 	/* width: ; */
 }
 
-
 .block-1 .sub h1  {
-	font-weight: bolder;
-	
+	font-weight: bolder;	
 }
 
 .block-2 {
@@ -82,7 +76,7 @@ body main {
 @media only screen and (max-width: 500px ) {
 	/* Styles for screens less than PIXELS wide */
 	.block-1 {
-		background-color:  rgb(244, 109, 109) ;
+		background-color: var(--primary-color) ;
 		padding: 0px;
 	}
 
@@ -93,23 +87,28 @@ body main {
 		grid-template-columns: 1fr;
 		/* width: 100% ; */
 	} 
-
-
-	
-	
-	
 	
 }
-
-
-
-
-
 
 .block-2{
-	background-color:  rgb(147, 147, 147) ;
-	height: 100vh;
+	background-color:  var(--primary-color) ;
+	height: 100vh;  
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+
+.block-2 .sub { 
+	padding: 2em;
+	border:  3px 
+	dashed green ;
+}
+
+
+
+
+
+
+
+
 
 
 
