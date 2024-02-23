@@ -79,7 +79,9 @@ body main {
 	font-weight: bolder;	
 }
 
-
+/* THIS THING ARE BLOCK-2 */
+/* THIS THING ARE BLOCK-2 */
+/* THIS THING ARE BLOCK-2 */
 
 .block-2{
 
@@ -87,26 +89,24 @@ body main {
 	border-radius: 2.5em;
 	position:  relative;
 	background-color:  var(--primary-color) ;
-	height: 100vh;  
+	height: 120vh;  
 	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 	display: flex ;
 	justify-content: center;
 }
 
 
-/* THIS THING ARE BLOCK-2 */
-/* THIS THING ARE BLOCK-2 */
-/* THIS THING ARE BLOCK-2 */
+
 
 .block-2 .sub { 
-	padding: 2em;
+	padding: 2em; 
 	border:  3px dashed rgb(147, 199, 25) ;
 	display:  grid ;
 	grid-template-columns: 1fr 1fr ;
-	grid-template-rows: 1fr 1fr; 
-	height:  80vh ; 
+	grid-template-rows: 8em 1fr 10em; 
+	height:  100vh ; 
 	/* max-width: 600px; */
-	width: 1000px;
+	width: 1000px; 
 	gap: 10px; 
 	margin-top: 5em;	 
 	column-gap: 30px;
@@ -139,8 +139,6 @@ body main {
 }
 
 .block-2 .sub .skill_container {
-
-	
 	/* border :  3px dashed green ; */
 	/* background-color: var(--sub-color); */
 	background-color: black ;
@@ -150,18 +148,12 @@ body main {
 	/* width: 100vw; */
 	border-radius: 1em; 
 	padding: 2em;
-	
-	
 } 
 
-.block-2 .sub .skill_container > h1  {
+.block-2 .sub  h1  {
 	font-weight: bolder ;
 	/* padding:  ; */
 }
-
-
-
-
 
 
 
@@ -180,6 +172,10 @@ body main {
 		grid-template-columns: 1fr;
 	}  */
 
+	section.block-2 {
+		height : 200vh; 
+	}
+
 	.block-2 .sub {
 		/* background-color: green; */ 
 		/* margin: 1em; */
@@ -187,13 +183,15 @@ body main {
 		height: 120vh;
 		display: flex;
 		flex-direction: column ;
-
+		text-align: center ;
 		/* display: grid ; */
 		/* grid-template-columns:  ;
 		grid-template-rows: 20vh 20vh 20vh;   */
 	} 
-
+	
 	.block-2 .sub h1 {
+		text-align: start ; 
+		scale: 0.95;
 		/* grid-row: 1; */
 		/* background-color:  yellow; */
 	}
@@ -206,7 +204,7 @@ body main {
 	.block-2 .sub  .skill_container{
 		padding: 0.8em ;
 		/* grid-row:  3/4; */ 
-		height: 90vh;
+		height: 70vh;			
 	} 
 	.block-2 .sub  .skill_container h2 {
 		/* font-size :  ; */
