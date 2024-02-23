@@ -8,9 +8,10 @@ elemenks.addEventListener("click", myFunction);
 
 
 // INITIALIZE NEEDS 
-function myFunction() {
+function myFunction(e) {
     // console.log
-    proj_showcase.innerHTML = "Project <br> Showcase " ; 
+    console.log(e)
+    proj_showcase.innerHTML = "Project <br> Showcase " ;  
     // proj_inner = proj_showcase.innerHTML ; 
 
     // proj_inner = "nice" ; 
@@ -26,28 +27,73 @@ function myFunction() {
 }
 
 
+window.addEventListener('load' , (e)=>{
+    startQueries();
+    // console.log(e) ; 
+})
 
 
 
-// Create a MediaQueryList object for max-width: 700px
-const mediaQuery = window.matchMedia("(max-width: 700px)");
-
-// Define a function to handle changes
-function handleViewportChange(event) {
-    if (event.matches) {
-        // If viewport is <= 700px wide
-        document.proj_showcase.style.backgroundColor = "yellow";
-    } else {
-        // If viewport is > 700px wide
-        document.body.style.backgroundColor = "pink";
+const startQueries = () => {
+    const media_query = window.matchMedia('( min-width : 400px )')
+    
+    console.log(e)
+    
+    if(media_query.matches){
+        console.log("it matehces !  ")
+    //    alert('matches!') ; 
+        // console.log(media_query)
     }
+    // print(media_query.addEventListener)
+
+
+
 }
-
-// Call the function initially
-handleViewportChange(mediaQuery);
-
-// Attach listener for changes
-mediaQuery.addEventListener("change", handleViewportChange);
+ 
+// window.addEventListener('load' , () => {
+//     startQueries(); 
+// })
 
 
+// // Create a MediaQueryList object for max-width: 700px
+// const mediaQuery = window.matchMedia("(min-width: 400px)");
 
+// // Define a function to handle changes
+// function handleViewportChange(event) {
+//     if (event.matches) {
+//         // If viewport is <= 700px wide
+//         document.proj_showcase.style.backgroundColor = "yellow";
+//     } else {
+//         // If viewport is > 700px wide
+//         document.proj_showcase.backgroundColor = "pink";
+//     }
+// }
+
+// // Call the function initially
+// handleViewportChange(mediaQuery);
+
+// // Attach listener for changes
+// mediaQuery.addEventListener("change", handleViewportChange);
+
+
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        alert('higher !')
+    //   document.body.style.backgroundColor = "yellow";
+    } else {
+        alert('lower ')
+    //   document.body.style.backgroundColor = "pink";
+    }
+  }
+  
+  // Create a MediaQueryList object
+  var x = window.matchMedia("(min-width: 500px)")
+  
+  // Call listener function at run time
+  myFunction(x);
+  
+  // Attach listener function on state changes
+  x.addEventListener("change", function() {
+    myFunction(x);
+  }); 
