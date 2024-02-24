@@ -200,11 +200,13 @@ body main {
 
 #block-3 .sub #img_tab  {
 	display:  grid  ;	 
-	grid-template-columns: 1fr 1fr ; 
-	grid-template-rows: 2fr 1fr ; 
-}
+	grid-template-columns: 2fr 1fr ; 
+	grid-template-rows: 1fr 1fr ; 
+} 
 
-#block-3
+#block-3 .sub #img_tab .1st {
+	grid-row: 1/3 ;
+}
 
 #block-3 .sub #img_tab > * { 
 	border:  1px dashed white;
@@ -285,7 +287,12 @@ body main {
 	#block-3 .sub #content {
 		grid-column: 1/2;
 	} 
-
+ 
+	#block-3 .sub #img_tab  {
+		display:  grid  ;	 
+		grid-template-columns: 1fr 1fr ; 
+		grid-template-rows: 2fr 1fr ; 
+	}
 	
 
 	
