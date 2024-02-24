@@ -34,21 +34,21 @@ window.addEventListener('load' , (e)=>{
 
 
 
-const startQueries = () => {
-    const media_query = window.matchMedia('( min-width : 400px )')
+// const startQueries = () => {
+//     const media_query = window.matchMedia('( min-width : 400px )')
     
-    console.log(e)
+//     console.log(e)
     
-    if(media_query.matches){
-        console.log("it matehces !  ")
-    //    alert('matches!') ; 
-        // console.log(media_query)
-    }
-    // print(media_query.addEventListener)
+//     if(media_query.matches){
+//         console.log("it matehces !  ")
+//     //    alert('matches!') ; 
+//         // console.log(media_query)
+//     }
+//     // print(media_query.addEventListener)
 
 
-
-}
+    
+// }
  
 // window.addEventListener('load' , () => {
 //     startQueries(); 
@@ -79,17 +79,19 @@ const startQueries = () => {
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        alert('higher !')
-    //   document.body.style.backgroundColor = "yellow";
+        alert('higher !'); 
+        
+    //   document.bodasdasy.style.backgroundColor = "yellow";
     } else {
         alert('lower ')
     //   document.body.style.backgroundColor = "pink";
     }
   }
-  
-  // Create a MediaQueryList object
+
+
+//   Create a MediaQueryList object
   var x = window.matchMedia("(min-width: 500px)")
-  
+   
   // Call listener function at run time
   myFunction(x);
   

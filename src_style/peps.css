@@ -154,7 +154,23 @@ body main {
 	font-weight: bolder ;
 	/* padding:  ; */
 }
+ 
 
+/* THIS ARE BLOCK-3  */
+/* THIS ARE BLOCK-3  */
+/* THIS ARE BLOCK-3  */
+
+#block-3 {
+	background-color:  var(--primary-color) ;
+	height: 100vh;  
+}
+
+#block-3 .sub {
+	border:  3px dashed rgb(147, 199, 25) ;
+	display: grid ;  	  
+	grid-template-rows:  1fr 1fr ;
+	grid-template-columns: 1fr 1fr ;
+}
 
 
 @media only screen and (max-width: 500px ) {
