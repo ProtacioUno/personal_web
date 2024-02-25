@@ -97,9 +97,6 @@ body main {
 	justify-content: center; 
 }
 
-
-
-
 .block-2 .sub { 
 	padding: 2em; 
 	border:  3px dashed rgb(147, 199, 25) ;
@@ -183,34 +180,47 @@ body main {
 } 
 
 #block-3 .sub  * {
-	border: 3px dashed green ; 
+	/* border: 3px dashed green ;  */
 	/* display: ; */
 } 
 
+#block-3 .sub #content {
+	flex-direction: column ;
+	display:  flex ; 
+	justify-content: flex-end;
+}
+
 #block-3 .sub #content > h1  { 
-	font-weight: bolder;
+	font-weight: bolder; 
 
 } 
 
 
 #block-3 .sub #tool_bar {
-	grid-column: 1/3; 
+	grid-column: 1/3;  
  
 }	
 
 #block-3 .sub #img_tab  {
 	display:  grid  ;	 
 	grid-template-columns: 2fr 1fr ; 
-	grid-template-rows: 1fr 1fr ; 
+	grid-template-rows: 1fr 1fr ;  
+	border-radius : 1em ;
+	background-color: var(--sub-color);
 } 
 
-#block-3 .sub #img_tab .1st {
-	grid-row: 1/3 ;
+#block-3 .sub #img_tab .img_1st {
+	grid-row: 1/3 ;  
+		
 }
 
+/* #block-3 .sub #img_tab  */
+
 #block-3 .sub #img_tab > * { 
-	border:  1px dashed white;
+	border:  1px dashed white; 
+	border-radius : 1em ;
 }
+	
 
 
 
