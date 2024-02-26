@@ -81,7 +81,7 @@ window.addEventListener('load' , (e)=>{
 // mediaQuery.addEventListener("change", handleViewportChange);
 
 
-const tool_lest = document.querySelectorAll('.tool_list')
+// const tool_lest = document.querySelectorAll('.tool_list');
 
 
 function myFunction(x) {
@@ -108,3 +108,20 @@ function myFunction(x) {
     myFunction(x);
   }); 
 
+
+
+
+const  tool_lest = document.querySelector('.tool_list').textContent;
+// const tool_lest = document.querySelectorAll('.tool_list').children;
+const emo = document.querySelector('#tool_bar');
+   
+  emo.addEventListener('click', ()=>{
+    console.log('it wokks ! '); 
+    // console.log(tool_lest.innerHTML)
+     console.log(typeof tool_lest)  
+
+    
+    
+    // console.log("ukinaam ${tool_lest}"); 
+    
+  })
