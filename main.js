@@ -1,9 +1,17 @@
 
-elemenks = document.querySelector('.skill_container') ; 
-proj_showcase = document.querySelector('.project_showcase'); 
+// elemenks = document.querySelector('.skill_container') ; 
+elemenks = document.querySelector('#content') ; 
+// proj_showcase = document.querySelector('.project_showcase'); 
+
+// elemenks.addEventListener("click", myFunction);
+
+
 
 elemenks.addEventListener("click", myFunction);
- 
+
+// function myFunction(){
+//   alert('cleck')
+// }
 
 
 
@@ -13,11 +21,8 @@ function myFunction(e) {
     console.log(e)
     proj_showcase.innerHTML = "Project <br> Showcase " ;  
     // proj_inner = proj_showcase.innerHTML ; 
-
     // proj_inner = "nice" ; 
-
     // print
-
     // alert(proj_inner);   
 
     // alert(typeof proj_inner);   
@@ -76,26 +81,30 @@ window.addEventListener('load' , (e)=>{
 // mediaQuery.addEventListener("change", handleViewportChange);
 
 
+const tool_lest = document.querySelectorAll('.tool_list')
+
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        alert('higher !'); 
-        
+      
+      console.log("singkamas ", tool_lest.innerHTML)
+      // alert()
+        // alert('higher !'); 
     //   document.bodasdasy.style.backgroundColor = "yellow";
     } else {
-        alert('lower ')
+        alert('lower !')
     //   document.body.style.backgroundColor = "pink";
     }
   }
 
-
 //   Create a MediaQueryList object
-  var x = window.matchMedia("(min-width: 500px)")
+  var x = window.matchMedia("(max-width: 500px)")
    
   // Call listener function at run time
-  myFunction(x);
+  // myFunction(x);
   
   // Attach listener function on state changes
   x.addEventListener("change", function() {
     myFunction(x);
   }); 
+

@@ -225,7 +225,8 @@ body main {
 	/* justify-content: start  ; */
 	align-items: center ;
 	gap:  20px; 
-	/* padding: 1 ; */
+	flex-wrap: wrap ;
+	/* padding: 1 ; */ 
 } 
 
 #block-3 .sub #tool_bar  .tool_list_2 { 
@@ -366,8 +367,17 @@ body main {
 	} 
 
 	#block-3 .sub #tool_bar .tool_list {
-		display: inline-block 	;
+		flex-wrap: wrap ;
+		/* display: inline-block 	; */
 	}
+
+	#block-3 .sub #tool_bar .tool_list * {
+		margin:  1 ;
+		gap: 0 ;
+	}
+	
+	
+
 	#block-3 .sub #tool_bar .tool_list_2 h4:first-child  {
 		display: none;
 	}
