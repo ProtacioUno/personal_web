@@ -164,20 +164,24 @@ body main {
 #block-3 {
 	background-color:  var(--primary-color) ;
 	padding: 3em; 
-	height: 80vh;  
+	/* max-height: 80vh; */
+	/* height: 80vh;   */
+	height: auto;
 	display: flex;
-	justify-content: center ; 
-	
+	justify-content: center ;  
 }
 
 #block-3 .sub {
-	border:  3px dashed rgb(228, 237, 207) ;
+	/* border:  3px dashed rgb(228, 237, 207) ; */ 
+
 	display: grid ;  	  
 	grid-template-rows:  80%  17%  ;
 	grid-template-columns: 57% 43%  ; 
 	padding: 2em; 
 	width: 1000px; 
 	gap: 1em; 
+	height: 70vh;
+	/* height:  auto	; */
 	
 } 
 
@@ -206,7 +210,8 @@ body main {
 	/* display: flex ; */
 	display: grid ; 
 	grid-template-columns: 3fr  10fr ;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows:  1fr ;
+	/* grid-auto-rows: auto; */
 	column-gap: 25px;
 	/* justify-content: space-between; */
 	/* align-items: start;  */ 
@@ -229,12 +234,15 @@ body main {
 #block-3 .sub #tool_bar  .tool_list {
 	display:  flex ; 
 	
-	/* justify-content: start  ; */ 
-	align-items: center ;
+
+	/* justify-content: center  ;  */
+	
+	/* align-items: center ; */
 	row-gap: 20px; 
 	/* flex-wrap: 20px; */
 	flex-wrap: wrap-reverse ; 
-	
+	padding:  0 ;
+	margin:  0;
 	
 	/* padding: 1 ; */ 
 } 
@@ -276,7 +284,7 @@ body main {
 
 /* #block-3 .sub #img_tab  */
 
-#block-3 .sub #img_tab > * { 
+#block-3 .sub #img_tab > * { x
 	border:  1px dashed white; 
 	border-radius : 1em ;
 }
@@ -383,7 +391,9 @@ body main {
 	} 
 
 	#block-3 .sub #tool_bar h3 {
-		margin-bottom: 0.8em;
+		margin-bottom: 0.8em; 
+		background-color: transparent ;
+		/* border-color: none ; */ 
 	}
 
 	#block-3 .sub #tool_bar .tool_list * {
