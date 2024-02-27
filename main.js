@@ -118,7 +118,15 @@ const emo = document.querySelector('#tool_bar');
   emo.addEventListener('click', ()=>{
     console.log('it wokks ! '); 
     // console.log(tool_lest.innerHTML)
-     console.log(typeof tool_lest)  
+
+    for(let i=0 ; i<20; i++){
+      console.log(tool_lest[i])
+    }
+    // console.log(tool_lest[3])
+    // console.log(tool_lest[])
+    // console.log(tool_lest[3])
+    //  console.log(typeof tool_lest)  
+    
 
     
     
