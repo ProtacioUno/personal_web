@@ -34,6 +34,7 @@ body main {
 	justify-content: center ;
 	/* border:  3px dashed blue; */
 	/* background-color:  ; */	
+	z-index: 3;
 } 
  
 .block-1 .sub { 	
@@ -41,10 +42,27 @@ body main {
 	/* place-items: center; */
 	margin-top: 30px;
 	grid-template-rows: 70vh  ;
-	grid-template-columns: 1fr 1fr ; 
-	/* max-width: 1000px; */s
-	width: 1000px;
+	grid-template-columns: 1fr 2fr ; 
+	
+	/* max-width: 1000px; */ 
+	width: 1000px; 
 	/* width: 100% ; */
+	z-index: 20;
+	position: absolute;
+	background-color: transparent ;
+}  
+
+.block-1 #back { 
+	filter: blur(500px);
+	/* -webkit-filter: blur(8px); */ 
+	position: static;
+	width: 200% ;
+	height: 100vh;
+	z-index: -1;
+	/* background-image: url(mounts.jpg); */
+	background: grey url(/trialss.jpg) center center/cover no-repeat;
+	/* background-color: green; */
+	
 }
 
 .block-1 .sub .left{ 
@@ -58,9 +76,18 @@ body main {
 	padding: 2em;
 }
 
+
+.block-1 .sub .left h1 {
+	margin-left:  0.5	em;
+}
+
 .block-1 .sub .right {
 	/* border:  3px dashed green ; */
-	color: green; 
+	border-radius: 1em 1em 0 1em ;
+	background-color: var(--sub-color)
+	/* color: green;   */
+
+ 
 }
 
 .block-1 .sub .left .contact_bar{
