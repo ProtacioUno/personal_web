@@ -22,14 +22,13 @@ body main {
 	flex-direction: column;
 	
 } 
-
+ 
 .block-1{ 
 	padding: 3em ;
 	/* background-color: tan; */
 	/* width: ; */
 	height: 100vh;   
 	background-color:  var(--primary-color) ;
-	/* display:  flex ; */
 	display: flex;
 	justify-content: center ;
 	/* border:  3px dashed blue; */
@@ -37,31 +36,33 @@ body main {
 	z-index: 3;
 } 
  
+.block-1 .sub * {
+	border: 1px dashed white;
+}
+
 .block-1 .sub { 	
 	display: grid ;
 	/* place-items: center; */
 	margin-top: 30px;
 	grid-template-rows: 70vh  ;
 	grid-template-columns: 1fr 2fr ; 
-	
 	/* max-width: 1000px; */ 
 	width: 1000px; 
 	/* width: 100% ; */
 	z-index: 20;
-	position: absolute;
-	background-color: transparent ;
+	/* position: absolute; */
+	/* background-color: transparent ; */
 }  
 
-.block-1 #back { 
-	filter: blur(500px);
-	/* -webkit-filter: blur(8px); */ 
+ .block-1 #back {  
+	display: none ;
+	/* filter: blur(500px);
+	 -webkit-filter: blur(8px);  
 	position: static;
 	width: 200% ;
 	height: 100vh;
 	z-index: -1;
-	/* background-image: url(mounts.jpg); */
-	background: grey url(/trialss.jpg) center center/cover no-repeat;
-	/* background-color: green; */
+	background: grey url(/trialss.jpg) center center/cover no-repeat; */ 
 	
 }
 
@@ -324,16 +325,33 @@ body main {
 	/* Styles for screens less than PIXELS wide */
 	.block-1 {
 		background-color: var(--primary-color) ;
-		padding: 0px;
+		padding: 0 ;
+		margin: 0;
 		
 	}
 
-	/* .block-1 .sub {
-		display: grid;
-		margin-top: 30px;
-		grid-template-rows: 60vh 60vh;
+	.block-1 .sub {
+		/* display: flex;  */
+		/* flex-direction: column; */
+		
+		display: grid; 
+		/* margin-top: 30px; */
+		grid-template-rows: 20vh 60vh;
 		grid-template-columns: 1fr;
-	}  */
+		width:80vh;
+		
+	} 
+
+	.block-1 .sub .right {
+		/* margin: 1em ;  */
+		/* height: 20vh; */
+		/* width: 20vh; */
+		/* padding; */
+	}
+
+	.block-1 .sub .left .contact_bar {
+		width: 20vh;
+	}
 
 	section.block-2 {
 		height:  auto ;
