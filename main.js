@@ -155,16 +155,35 @@ contact_bar.forEach(contact_list => {
     if (['contact_bar github', 'fa-brands fa-github'].includes(x) ) {
       console.log(github) ; 
       github.classList.add('act') ;   
+      setTimeout(function(){
+        console.log('imwwoking shite') ; 
+        github.classList.remove('act')
+        
+    } , 2000 )  
+
+    if(gmail.classList.contains('act')  ){
+      gmail.classList.remove('act')
+    }
+      
     }
     
     if (['contact_bar gmail' , 'gmail'].includes(x)) {
       console.log('do im working ?'); 
-      gmail.classList.add('act')   ; 
+      gmail.classList.add('act')   ;         
+      
       console.log(gmail); 
+      setTimeout(function(){
+        console.log('imwwoking shite') ; 
+        gmail.classList.remove('act')
+        
+      } , 2000 )
       
-      
+      if(github.classList.contains('act')  ){
+        github.classList.remove('act')
+      }
       // gmail.innerHTML = "<div class='gmail'>  </div>  <p> enervinluan01@gmail.com </p>" ;                  
     }
+    
 
     // TOOGGLE SOME this button using ACTIVE ! 
 

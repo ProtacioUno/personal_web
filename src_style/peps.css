@@ -157,7 +157,9 @@ body main {
 	}
 
 	.block-1 .sub #second div .gmail {
-		/* height: 50px ;  */
+		/* width: ; */
+		height: 50px ; 
+		/* margin: 10px; */
 	}
 	 
 	.block-1 .sub  #second  div .contact_bar p {
