@@ -34,7 +34,7 @@ body main {
 } 
 
  
-.block-1 .sub * {
+.block-1 .sub *  {
 	/* border: 1px dashed white; */
 } 
 
@@ -99,35 +99,65 @@ body main {
 	.block-1 .sub .left h1 {
 		margin-left:  0.5	em;
 	}
-
-	.block-1 .sub  #second .contact_bar{
-		color: white  ;
-
-		border-radius:  1em; 	
-		background-color: var(--sub-color) ;	 
-		padding:  0.8em 1.6em ;  
-		/* max-width:; */
-		
-		/* max-width: 20px;	 */
+	
+	.block-1 .sub  #second div  {
+		width: 100%	;
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: center; 
-		gap: 0.7em;
-		/* align-items: centers; */
-		/* display: inline-block; */
-		/* display: inline; */
-		/* padding: ; */
-		/* width: ; */
-		/* gap: 3px ; */	
-	}	
-
-
-	.block-1 .sub #second .contact_bar .fa-github {
-		scale: 1.6; 
-		/* margin-right : 1em ;  */
+		flex-wrap: wrap ;	
+		gap: 10px;
+	}
+	
+	.block-1 .sub  #second div *  {		
+		/* border: 1px dashed cyan  ;   */
 		
 	}
-	.block-1 .sub  #second .contact_bar p {
+	
+	
+
+	.block-1 .sub  #second div .contact_bar {
+		display: flex; 
+		justify-content: center;
+		align-items: center;
+		border-radius:  1em; 	
+		max-width: 15em;	
+		background-color: var(--sub-color) ;	 
+		padding: 10px 1em ;  		
+		gap: 10px;  
+		height: 50px; 
+		
+	}  
+	
+	.block-1 .sub  #second div .active {
+		padding: 10px 2em; 
+		
+	}
+
+
+	.block-1 .sub #second div .contact_bar .fa-github {
+		scale: 1.7;   
+		margin: 0 10px;
+		
+		/* width: 30px; */
+		
+		/* margin-right : 1em ;  */		
+	}
+	
+	.block-1 .sub #second div .contact_bar > div {
+		width: 20%;
+		height: 100%;
+		background-image: url(/src_style/icon_gmails.png); 
+		background-size: cover;
+		border-radius: 50%;  
+		width: 30px; 
+		/* margin: 0; */
+		
+	}
+
+	.block-1 .sub #second div .gmail {
+		/* height: 50px ;  */
+	}
+	 
+	.block-1 .sub  #second  div .contact_bar p {
 
 		font-size: 10px;
 		margin: 0 ;
