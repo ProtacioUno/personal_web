@@ -137,7 +137,8 @@ const emo = document.querySelector('#tool_bar');
    
 
 let contact_bar = document.querySelectorAll('.contact_bar') ; 
-let gmail = document.querySelector('.gmail') ; 
+let github = document.querySelector('#github p') ;
+let gmail = document.querySelector('#gmail p') ;  
 // let gmail = 
 
 contact_bar.forEach(contact_list => {
@@ -152,16 +153,20 @@ contact_bar.forEach(contact_list => {
 
     // console.log(typeof event.target)  ; 
     if (['contact_bar github', 'fa-brands fa-github'].includes(x) ) {
-      alert('Im github shite!');   
+      console.log(github) ; 
+      github.classList.add('act') ;   
     }
     
     if (['contact_bar gmail' , 'gmail'].includes(x)) {
-      console.log('do im working ?')
-      // alert('Im gmail shits ! ') ; 
-      gmail.innerHTML = "<div class='gmail'>  </div>  <p> https://github.com/ProtacioUno </p>" ;      
+      console.log('do im working ?'); 
+      gmail.classList.add('act')   ; 
+      console.log(gmail); 
       
       
+      // gmail.innerHTML = "<div class='gmail'>  </div>  <p> enervinluan01@gmail.com </p>" ;                  
     }
+
+    // TOOGGLE SOME this button using ACTIVE ! 
 
   
     

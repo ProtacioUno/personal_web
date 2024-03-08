@@ -127,19 +127,22 @@ body main {
 		
 	}  
 	
-	.block-1 .sub  #second div .active {
-		padding: 10px 2em; 
-		
+	.block-1 .sub  #second div p.deact {
+	 	padding: 10px 2em; 		
+		display: none ;
 	}
+
+	.block-1 .sub  #second div p.act {
+		display: block;
+	/* display:; */
+	}
+
+	
 
 
 	.block-1 .sub #second div .contact_bar .fa-github {
 		scale: 1.7;   
 		margin: 0 10px;
-		
-		/* width: 30px; */
-		
-		/* margin-right : 1em ;  */		
 	}
 	
 	.block-1 .sub #second div .contact_bar > div {
