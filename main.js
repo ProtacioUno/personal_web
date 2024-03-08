@@ -32,10 +32,10 @@ function myFunction(e) {
 }
 
 
-window.addEventListener('load' , (e)=>{
-    startQueries();
-    // console.log(e) ; 
-})
+// window.addEventListener('load' , (e)=>{
+//     startQueries();
+//     // console.log(e) ; 
+// })
 
 
 
@@ -132,4 +132,44 @@ const emo = document.querySelector('#tool_bar');
     
     // console.log("ukinaam ${tool_lest}"); 
     
+  }) 
+
+   
+
+let contact_bar = document.querySelectorAll('.contact_bar') ; 
+let gmail = document.querySelector('.gmail') ; 
+// let gmail = 
+
+contact_bar.forEach(contact_list => {
+  contact_list.addEventListener('click' , (event)=>{
+    // console.log('im working');
+    // console.log(event.target)  ; 
+    console.log(event.target.className)  ;  
+    // console.log(typeof event.target.className)  ;   
+    
+    x = event.target.className
+    
+
+    // console.log(typeof event.target)  ; 
+    if (['contact_bar github', 'fa-brands fa-github'].includes(x) ) {
+      alert('Im github shite!');   
+    }
+    
+    if (['contact_bar gmail' , 'gmail'].includes(x)) {
+      console.log('do im working ?')
+      // alert('Im gmail shits ! ') ; 
+      gmail.innerHTML = "<div class='gmail'>  </div>  <p> https://github.com/ProtacioUno </p>" ;      
+      
+      
+    }
+
+  
+    
   })
+  // addEventListene
+    // console.log('helyy') ; 
+});
+
+
+
+  // console.log(contact_bar ) ;  
