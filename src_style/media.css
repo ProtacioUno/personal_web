@@ -80,11 +80,11 @@
 	.block-2 .sub  .skill_container{
 		padding: 0.8em ;
 		height: auto;		
-        gap: 7px;
+        gap: 10px ;
 	}  
 
 	.block-2 .sub  .skill_container * {
-		/* border: 1px dashed green; */
+		border: 1px dashed green;
         scale: 0.8;
 	}
 
