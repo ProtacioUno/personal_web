@@ -1,0 +1,161 @@
+@media only screen and (max-width: 500px ) {
+	/* Styles for screens less than PIXELS wide */
+	.block-1 {
+		background-color: var(--primary-color) ;
+		padding: 0 ;
+		margin: 0;
+		
+	}
+
+	.block-1 .sub {
+		/* display: flex;   */
+		
+		/* width: ; */
+		/* flex-wrap: ; */
+		/* flex-direction: column; */
+		
+		display: grid; 
+		margin-top: 30px;
+		grid-template-rows: 20vh 60vh;
+		grid-template-columns: 1fr;
+		/* width:80vh; */
+		/* padding: 0.8em; */
+
+	} 
+
+	.block-1 .sub #second{
+		/* padding: 1em;  */
+		/* display:  flex; */
+		justify-content: start;
+		/* align-items: flex-start; */
+	}
+
+	.block-1 .sub #first {
+		
+		
+	}
+
+	.block-1 .sub .left .contact_bar {
+		width: 20vh;
+	}
+
+	.block-1 .sub .left .contact_bar i 
+
+
+	/*  BLOCk- 2 ! */
+	/*  BLOCk- 2 ! */
+	/*  BLOCk- 2 ! */
+	/*  BLOCk- 2 ! */
+
+
+	section.block-2 {
+		height:  auto ;        
+	}
+
+	.block-2 .sub {
+		/* background-color: green; */ 
+		/* margin: 1em; */
+		padding: 0.8em;
+		height: 120vh;
+		display: flex;
+		flex-direction: column ;
+		text-align: center ;
+		/* display: grid ; */
+		/* grid-template-columns:  ;
+		grid-template-rows: 20vh 20vh 20vh;   */
+	} 
+	
+	.block-2 .sub h1 {
+		text-align: start ; 
+		scale: 0.95;
+		/* grid-row: 1; */
+		/* background-color:  yellow; */
+	}
+
+	.block-1 .sub .inamoe {
+		/* grid-row : 2/3 ;   */
+		background-color:  black ;
+	} 
+	
+	.block-2 .sub  .skill_container{
+		padding: 0.8em ;
+		height: auto;		
+        gap: 7px;
+	}  
+
+	.block-2 .sub  .skill_container * {
+		/* border: 1px dashed green; */
+        scale: 0.8;
+	}
+
+	
+
+	
+
+	#block-3 {
+		padding:  0  ;
+		height: auto;
+	} 
+	
+	#block-3 .sub { 
+		padding: 0.8em;
+		height: 120vh;  
+		display:  grid ; 
+		grid-template-columns: 1fr; 
+		grid-template-rows:  3fr 2fr 2fr  ;
+		gap: 10px 0; 
+		/* display: grid ; */
+		
+	}  
+ 
+	
+	#block-3 .sub #content {
+		grid-column: 1/2;
+	} 
+ 
+	#block-3 .sub #img_tab  {
+		display:  grid  ;	 
+		grid-template-columns: 1fr 1fr ; 
+		grid-template-rows: 2fr 1fr ; 
+
+	}
+	
+	#block-3 .sub #img_tab .img_1st {
+		grid-column:  1/3 ;	
+		grid-row: 1/2;
+	}
+
+	#block-3 .sub #tool_bar {
+		display: flex; 
+		flex-direction: column;
+		/* grid-row: 1fr 1fr 1fr ; */
+		
+	} 
+
+	#block-3 .sub #tool_bar .tool_list {
+		flex-wrap: wrap ;
+		/* display: inline-block 	; */
+	} 
+
+	#block-3 .sub #tool_bar h3 {
+		margin-bottom: 0.8em; 
+		background-color: transparent ;
+		/* border-color: none ; */ 
+	}
+
+	#block-3 .sub #tool_bar .tool_list * {
+		margin:  1 ;
+		gap: 0 ;
+	}
+	
+	
+
+	/* #block-3 .sub #tool_bar .tool_list_2 h4:first-child  {
+		display: none;
+	} */
+	
+
+	
+/*  */
+	 
+}
