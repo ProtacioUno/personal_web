@@ -55,11 +55,12 @@
 	.block-2 .sub {
 		/* background-color: green; */ 
 		/* margin: 1em; */
-		padding: 0.8em;
-		height: 120vh;
+		padding: 0.8em 0.8em 1.3em 0.8em;
+		height: auto;
 		display: flex;
 		flex-direction: column ;
-		text-align: center ;
+		text-align: center ; 
+		gap: 0px;
 		/* display: grid ; */
 		/* grid-template-columns:  ;
 		grid-template-rows: 20vh 20vh 20vh;   */
@@ -68,26 +69,33 @@
 	.block-2 .sub h1 {
 		text-align: start ; 
 		scale: 0.95;
-		/* grid-row: 1; */
-		/* background-color:  yellow; */
+		margin:  0 ;
+		 
 	}
-
-	.block-1 .sub .inamoe {
+	
+	.block-2 .sub .inamoe {
 		/* grid-row : 2/3 ;   */
-		background-color:  black ;
+		/* background-color:  black ;  */
+		margin:  0 ;
+
 	} 
 	
 	.block-2 .sub  .skill_container{
-		padding: 0.8em ;
+        gap: 5px  5px ; 
+		/* height:70vh; */
 		height: auto;		
-        gap: 10px ;
+		--default-padding : 0 ;  
+		padding:  0 ; 
 	}  
 
 	.block-2 .sub  .skill_container * {
 		border: 1px dashed green;
-        scale: 0.8;
+        scale: 0.7;
 	}
 
+	.block-2 .sub h1 {
+		
+	}
 	
 
 	
