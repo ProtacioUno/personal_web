@@ -164,7 +164,7 @@ body main {
 	 
 	.block-1 .sub  #second  div .contact_bar p {
 
-		font-size: 10px;
+		font-size: 10px;	
 		margin: 0 ;
 	} 
 
@@ -181,8 +181,8 @@ body main {
 
 .block-2{
 
-	top: -40px;
-	border-radius: 2.5em;
+	/* top: -40px; */
+	/* border-radius: 2.5em; */
 	position:  relative;
 	background-color:  var(--primary-color) ;
 	height: 100vh;  
@@ -199,10 +199,8 @@ body main {
 	grid-template-columns: 1fr 1fr ;
 	grid-template-rows: 8em 1fr 10em; 
 	height:  100vh ; 
-	/* max-width: 600px; */
 	width: 1000px; 
 	gap: 10px; 
-	/* margin-top: 5em;	  */
 	column-gap: 30px;
 	
 } 
